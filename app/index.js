@@ -25,7 +25,7 @@ export default class DesignTesting extends Component {
 };
     return (
       <View style={styles.container}>
-        <ScrollView ref={(scrollView) => { _scrollView = scrollView; }}
+        <ScrollView>
         automaticallyAdjustContentInsets={false}
         onScroll={() => { console.log('onScroll!'); }}
         scrollEventThrottle={200} style={styles.scrollView}>
