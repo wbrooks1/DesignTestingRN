@@ -16,6 +16,7 @@ import {
   ScrollView,
 } from 'react-native'
 import SingleLineInput from '../app/components/SingleLineInput';
+import MultiLineInput from '../app/components/MultiLineInput';
 
 
 export default class DesignTesting extends Component {
@@ -25,15 +26,16 @@ export default class DesignTesting extends Component {
 };
     return (
       <View style={styles.container}>
-        <ScrollView>
-        automaticallyAdjustContentInsets={false}
-        onScroll={() => { console.log('onScroll!'); }}
-        scrollEventThrottle={200} style={styles.scrollView}>
-        </ScrollView>
+        <Image style={styles.image}
+          source={pic}/>
+        <Text style={styles.title}>
+          I.R.I.S
+        </Text>
         <SingleLineInput
-        placeholder="password"
-         secureTextEntry
-         borderTop
+          placeholder="Enter Text"
+        />
+        <MultiLineInput
+          placeholder="Multiline text input"
         />
       </View>
     );
@@ -45,17 +47,18 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#e1e5ed',
   },
-  welcome: {
+  title: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  image: {
+    width: 200,
+    height: 200,
+    marginTop: 5,
+  //  justifyContent: 'flex-start',
   },
    scrollView: {
      backgroundColor: '#6A85B1',

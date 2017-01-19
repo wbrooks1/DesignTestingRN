@@ -21,7 +21,7 @@ export default StyleSheet.create({
     margin: 5,
   },
   container: {
-    height: 40,
+    height: 20,
     backgroundColor: "#d9dde2",
     flex: 1,
     marginHorizontal: 10,

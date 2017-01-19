@@ -12,6 +12,7 @@ const SingleLineInput = (props) => {
         style={styles.input}
         autoCapitalize="none"
         autoCorrect={false}
+        multiline={true}
         {...props}
       />
     </View>
